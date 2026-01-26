@@ -74,6 +74,6 @@ module.exports.run = async function ({ event, api, args, Currencies }) {
   
   if (!two) return api.sendMessage("Please tag 1 person", threadID, messageID);
   else {
-        return makeImage({ one, two }).then(path => api.sendMessage({ body: ` আবর্জনা মুছে ফেলা হচ্ছে 😮‍💨💀🖱️`, attachment: fs.createReadStream(path)}, threadID, () => fs.unlinkSync(path), messageID));
+        return makeImage({ one, two }).then(path => api.sendMessage({ body: ` Removing The Trash 😮‍💨💀🖱️`, attachment: fs.createReadStream(path)}, threadID, () => fs.unlinkSync(path), messageID));
   }
 }
